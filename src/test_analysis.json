@@ -1,0 +1,175 @@
+{
+   "storyWords": [["one", "day", "lily", "explored", "the", "licorice", "maze"]],
+   "analyses": [
+      [
+         {
+            "wordIndex": 0,
+            "referencePhoneme": "w",
+            "transcribedPhoneme": "w",
+            "error": "None"
+         },
+         {
+            "wordIndex": 0,
+            "referencePhoneme": "ah",
+            "transcribedPhoneme": "ah",
+            "error": "None"
+         },
+         {
+            "wordIndex": 0,
+            "referencePhoneme": "n",
+            "transcribedPhoneme": "n",
+            "error": "None"
+         },
+         {
+            "wordIndex": 1,
+            "referencePhoneme": "d",
+            "transcribedPhoneme": "d",
+            "error": "None"
+         },
+         {
+            "wordIndex": 1,
+            "referencePhoneme": "ey",
+            "transcribedPhoneme": "ey",
+            "error": "None"
+         },
+         {
+            "wordIndex": 2,
+            "referencePhoneme": "l",
+            "transcribedPhoneme": "l",
+            "error": "None"
+         },
+         {
+            "wordIndex": 2,
+            "referencePhoneme": "ih",
+            "transcribedPhoneme": "ih",
+            "error": "None"
+         },
+         {
+            "wordIndex": 2,
+            "referencePhoneme": "l",
+            "transcribedPhoneme": "l",
+            "error": "None"
+         },
+         {
+            "wordIndex": 2,
+            "referencePhoneme": "iy",
+            "transcribedPhoneme": "iy",
+            "error": "None"
+         },
+         {
+            "wordIndex": 3,
+            "referencePhoneme": "ih",
+            "transcribedPhoneme": "ih",
+            "error": "None"
+         },
+         {
+            "wordIndex": 3,
+            "referencePhoneme": "k",
+            "transcribedPhoneme": "k",
+            "error": "None"
+         },
+         {
+            "wordIndex": 3,
+            "referencePhoneme": "s",
+            "transcribedPhoneme": "s",
+            "error": "None"
+         },
+         {
+            "wordIndex": 3,
+            "referencePhoneme": "p",
+            "transcribedPhoneme": "p",
+            "error": "None"
+         },
+         {
+            "wordIndex": 3,
+            "referencePhoneme": "l",
+            "transcribedPhoneme": "l",
+            "error": "None"
+         },
+         {
+            "wordIndex": 3,
+            "referencePhoneme": "ao",
+            "transcribedPhoneme": "ao",
+            "error": "None"
+         },
+         {
+            "wordIndex": 3,
+            "referencePhoneme": "r",
+            "transcribedPhoneme": "r",
+            "error": "None"
+         },
+         {
+            "wordIndex": 3,
+            "referencePhoneme": "d",
+            "transcribedPhoneme": "d",
+            "error": "None"
+         },
+         {
+            "wordIndex": 4,
+            "referencePhoneme": "dh",
+            "transcribedPhoneme": "dh",
+            "error": "None"
+         },
+         {
+            "wordIndex": 4,
+            "referencePhoneme": "ah",
+            "transcribedPhoneme": "ah",
+            "error": "None"
+         },
+         {
+            "wordIndex": 5,
+            "referencePhoneme": "l",
+            "transcribedPhoneme": "l",
+            "error": "None"
+         },
+         {
+            "wordIndex": 5,
+            "referencePhoneme": "ih",
+            "transcribedPhoneme": "ih",
+            "error": "None"
+         },
+         {
+            "wordIndex": 5,
+            "referencePhoneme": "k",
+            "transcribedPhoneme": "k",
+            "error": "None"
+         },
+         {
+            "wordIndex": 5,
+            "referencePhoneme": "er",
+            "transcribedPhoneme": "er",
+            "error": "None"
+         },
+         {
+            "wordIndex": 5,
+            "referencePhoneme": "ih",
+            "transcribedPhoneme": "ih",
+            "error": "None"
+         },
+         {
+            "wordIndex": 5,
+            "referencePhoneme": "sh",
+            "transcribedPhoneme": "sh",
+            "error": "None"
+         },
+         {
+            "wordIndex": 6,
+            "referencePhoneme": "m",
+            "transcribedPhoneme": "m",
+            "error": "None"
+         },
+         {
+            "wordIndex": 6,
+            "referencePhoneme": "ey",
+            "transcribedPhoneme": "ey",
+            "error": "None"
+         },
+         {
+            "wordIndex": 6,
+            "referencePhoneme": "z",
+            "transcribedPhoneme": "z",
+            "error": "None"
+         }
+      ]
+   ]
+}
