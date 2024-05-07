@@ -1,7 +1,45 @@
 import React from "react";
-import testAnalysis from "./sample_analysis.json";
+import testAnalysis from "./analysis_space.json";
+// import testAnalysis from "./analysis_candy.json";
 import "./App.css";
-import Header from "./Header";
+
+
+function Header() {
+   return (
+      <div
+         style={{
+            width: "100%",
+            height: "80px",
+            backgroundColor: "#406353",
+            color: "white",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            position: "relative",
+            marginBottom: "30px"
+         }}
+      ><div>
+            <div
+               style={{
+                  position: "absolute",
+                  bottom: "15px",
+                  left: "50px",
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  fontFamily: "Arial, sans-serif"
+               }}
+            >
+               Automatic Phoneme Recognition
+            </div>
+            <div style={{ position: "absolute", left: "500px", bottom: "15px" }}>  
+            <Legend />
+            </div>
+         </div>
+         
+      </div>
+   );
+}
+
 
 function AnalysisPage() {
    const storyWords = testAnalysis.storyWords;
@@ -152,8 +190,34 @@ function UserInputPhonemes({ phonemes }) {
    return (
       <div style={{ display: "flex" }}>
          {phonemes.map(({ transcribedPhoneme, error }, index) => {
-            const backgroundColor = error === "None" ? "white" : "#F05C4F";
-            const color = error === "None" ? "#406353" : "white";
+            let backgroundColor;
+            let color = "#406353"; // default text color
+            let displayText = transcribedPhoneme.toUpperCase(); // default display text
+
+            switch (error) {
+               case "None":
+                  backgroundColor = "white";
+                  color = "#406353";
+                  break;
+               case "Del":
+                  backgroundColor = "#F05C50"; // Red for deletion errors
+                  color = "white";
+                  displayText = " "; // Display blank space for deletion errors
+                  break;
+               case "Ins":
+                  backgroundColor = "#faea36"; // Yellow for insertion errors
+                  color = "#406353";
+                  break;
+               case "Sub":
+                  backgroundColor = "#F99246"; // Orange for substitution errors
+                  color = "white";
+                  break;
+               default:
+                  backgroundColor = "white"; // Default background color
+                  color = "#406353";
+                  break;
+            }
+
             return (
                <div
                   key={index}
@@ -163,15 +227,35 @@ function UserInputPhonemes({ phonemes }) {
                      padding: "5px",
                      marginRight: "5px",
                      width: "20px",
+                     height: "18px", // Set height to 30px
                      textAlign: "center"
                   }}
                >
-                  {transcribedPhoneme.toUpperCase()}
+                  {displayText}
                </div>
             );
          })}
       </div>
    );
+}
+
+function Legend() {
+   return (
+      <div style={{ display: "flex", alignItems: "center" }}>
+         <div style={{ marginRight: "7px" }}>
+            <div style={{ width: "24px", height: "24px", backgroundColor: "#F05C4F" }}></div>
+         </div>
+         <div style={{ marginRight: "25px" }}><strong>Deletion</strong></div>
+         <div style={{ marginRight: "7px" }}>
+            <div style={{ width: "24px", height: "24px", backgroundColor: "yellow" }}></div>
+         </div>
+         <div style={{ marginRight: "25px" }}><strong>Insertion</strong></div>
+         <div style={{ marginRight: "7px" }}>
+            <div style={{ width: "24px", height: "24px", backgroundColor: "#F99246" }}></div>
+         </div>
+         <div><strong>Substitution</strong></div>
+      </div>
+   )
 }
 
 export default AnalysisPage;
